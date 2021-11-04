@@ -63,3 +63,40 @@
         margin-top: 10px;
         min-height: 100px;
     }
+
+    .firstRowOfColor, .secondRowOfColor, .thirdRowOfColor {
+        display: flex;
+    }
+
+    .colorBlock {
+        width: 30%;
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        margin: 5px;
+    }
+
+    #tomato {
+        background-color: tomato;
+    }
+    #orange {
+        background-color: orange;
+    }
+    #dodgerBlue {
+        background-color: dodgerBlue;
+    }
+    #mediumSeaGreen {
+        background-color: mediumSeaGreen;
+    }
+    #gray {
+        background-color: gray;
+    }
+    #slateBlue {
+        background-color: slateBlue;
+    }
+    #violet {
+        background-color: violet;
+    }
+    #lightGray {
+        background-color: lightGray;
+    }
