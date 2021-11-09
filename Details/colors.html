@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color</title>
+    <style>
+        
+        .colorBlock {
+            width: 30%;
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .firstRowOfColor, .secondRowOfColor {
+            display: flex;
+        }
+
+        #red {
+            background-color: rgb(255, 0, 0);
+        }
+        #green {
+            background-color: rgb(60, 179, 113);
+        }
+        #yellow {
+            background-color: rgb(255, 165, 0);
+        }
+        #blue {
+            background-color: rgb(0, 0, 255);
+        }
+        #pink {
+            background-color: rgb(238, 130, 238);
+        }
+        #extra {
+            background-color: rgb(106, 90, 205);
+        }
+
+        #rbga1{
+            background-color: rgba(255, 99, 71, 0);
+            border: 1px solid lightsalmon;
+        }
+        #rbga2{
+            background-color: rgba(255, 99, 71, 0.2);
+        }
+        #rbga3{
+            background-color: rgba(255, 99, 71, 0.4);
+        }
+        #rbga4{
+            background-color: rgba(255, 99, 71, 0.6);
+        }
+        #rbga5{
+            background-color: rgba(255, 99, 71, 0.8);
+        }
+        #rbga6{
+            background-color: rgba(255, 99, 71, 1);
+        }
+
+        #hex1{
+            background-color: #ff0000;
+        }
+        #hex2{
+            background-color: #0000ff;
+        }
+        #hex3{
+            background-color: #3cb371;
+        }
+        #hex4{
+            background-color: #ee82ee;
+        }
+        #hex5{
+            background-color: #ffa500;
+        }
+        #hex6{
+            background-color: #6a5acd;
+        }
+
+        #hex31{
+            background-color: #fc9;
+        }
+        #hex32{
+            background-color: #f0f;
+        }
+        #hex33{
+            background-color: #b58;
+        }
+        
+    </style>
+</head>
+<body>
+    <h3>RGB Value</h3>
+
+    <p>In CSS, a color can be specified as an RGB value, using this formula</p>
+    <h4>rgb(red, green, blue)</h4>
+    <p>Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.</p>
+    <div class="codeRunDiv">
+        <div class="firstRowOfColor">
+          <div id="red" class="colorBlock">rgb(255, 0, 0)</div>
+          <div id="green" class="colorBlock">rgb(60, 179, 113)</div>
+          <div id="yellow" class="colorBlock">rgb(255, 165, 0)</div>
+        </div>
+        <div class="secondRowOfColor">
+          <div id="blue" class="colorBlock">rgb(0, 0, 255)</div>
+          <div id="pink" class="colorBlock">rgb(238, 130, 238)</div>
+          <div id="extra" class="colorBlock">rgb(106, 90, 205)</div>
+        </div>
+    </div>
+
+    <h3>RGBA Value</h3>
+    <h4>rgba(red, green, blue, alpha)</h4>
+    <div class="codeRunDiv">
+        <div class="firstRowOfColor">
+          <div id="rbga1" class="colorBlock">rgba(255, 99, 71, 0)</div>
+          <div id="rbga2" class="colorBlock">rgba(255, 99, 71, 0.2)</div>
+          <div id="rbga3" class="colorBlock">rgba(255, 99, 71, 0.4)</div>
+        </div>
+        <div class="secondRowOfColor">
+          <div id="rbga4" class="colorBlock">rgba(255, 99, 71, 0.6)</div>
+          <div id="rbga5" class="colorBlock">rgba(255, 99, 71, 0.8)</div>
+          <div id="rbga6" class="colorBlock">rgba(255, 99, 71, 1)</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h3>HEX Colors</h3>
+
+    <p>A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color. Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255). </p>
+    <h4>#rrggbb</h4>
+    
+    <div class="codeRunDiv">
+        <div class="firstRowOfColor">
+          <div id="hex1" class="colorBlock">#ff0000</div>
+          <div id="hex2" class="colorBlock">#0000ff</div>
+          <div id="hex3" class="colorBlock">#3cb371</div>
+        </div>
+        <div class="secondRowOfColor">
+          <div id="hex4" class="colorBlock">#ee82ee</div>
+          <div id="hex5" class="colorBlock">#ffa500</div>
+          <div id="hex6" class="colorBlock">#6a5acd</div>
+        </div>
+    </div>
+
+    <h3>3 Digit HEX Value</h3>
+    <h4>#rgb</h4>
+    <p>Where r, g, and b represents the red, green, and blue components with values between 0 and f. The 3-digit hex code can only be used when both the values (RR, GG, and BB) are the same for each components. So, if we have #ff00cc, it can be written like this: #f0c.</p>
+    <div class="codeRunDiv">
+        <div class="firstRowOfColor">
+          <div id="hex31" class="colorBlock">#fc9</div>
+          <div id="hex32" class="colorBlock">#f0f</div>
+          <div id="hex33" class="colorBlock">#b58</div>
+        </div>
+    </div>
+
+
+    <h3>HSL Colors</h3>
+
+    <p>In CSS, a color can be specified as an RGB value, using this formula</p>
+    <h4>rgb(red, green, blue)</h4>
+    <p>Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.</p>
+    <div class="codeRunDiv">
+        <div class="firstRowOfColor">
+          <div id="red" class="colorBlock">rgb(255, 0, 0)</div>
+          <div id="green" class="colorBlock">rgb(60, 179, 113)</div>
+          <div id="yellow" class="colorBlock">rgb(255, 165, 0)</div>
+        </div>
+        <div class="secondRowOfColor">
+          <div id="blue" class="colorBlock">rgb(0, 0, 255)</div>
+          <div id="pink" class="colorBlock">rgb(238, 130, 238)</div>
+          <div id="extra" class="colorBlock">rgb(106, 90, 205)</div>
+        </div>
+    </div>
+
+    <h3>RGBA Value</h3>
+    <h4>rgba(red, green, blue, alpha)</h4>
+    <div class="codeRunDiv">
+        <div class="firstRowOfColor">
+          <div id="rbga1" class="colorBlock">rgba(255, 99, 71, 0)</div>
+          <div id="rbga2" class="colorBlock">rgba(255, 99, 71, 0.2)</div>
+          <div id="rbga3" class="colorBlock">rgba(255, 99, 71, 0.4)</div>
+        </div>
+        <div class="secondRowOfColor">
+          <div id="rbga4" class="colorBlock">rgba(255, 99, 71, 0.6)</div>
+          <div id="rbga5" class="colorBlock">rgba(255, 99, 71, 0.8)</div>
+          <div id="rbga6" class="colorBlock">rgba(255, 99, 71, 1)</div>
+        </div>
+    </div>
+</body>
+</html>
