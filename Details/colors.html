@@ -86,6 +86,46 @@
         #hex33{
             background-color: #b58;
         }
+
+
+        #hsl1 {
+            background-color: hsl(0, 100%, 50%);
+        }
+        #hsl2 {
+            background-color: hsl(240, 100%, 50%);
+        }
+        #hsl3 {
+            background-color: hsl(147, 50%, 47%);
+        }
+        #hsl4 {
+            background-color: hsl(300, 76%, 72%);
+        }
+        #hsl5 {
+            background-color: hsl(39, 100%, 50%);
+        }
+        #hsl6 {
+            background-color: hsl(248, 53%, 58%);
+        }
+
+        #hsla1 {
+            background-color: hsla(9, 100%, 64%, 0);
+        }
+        #hsla2 {
+            background-color: hsla(9, 100%, 64%, 0.2);
+        }
+        #hsla3 {
+            background-color: hsla(9, 100%, 64%, 0.4);
+        }
+        #hsla4 {
+            background-color: hsla(9, 100%, 64%, 0.6);
+        }
+        #hsla5 {
+            background-color: hsla(9, 100%, 64%, 0.8);
+        }
+        #hsla6 {
+            background-color: hsla(9, 100%, 64%, 1);
+        }
+
         
     </style>
 </head>
@@ -154,37 +194,36 @@
         </div>
     </div>
 
+    <hr>
 
     <h3>HSL Colors</h3>
-
-    <p>In CSS, a color can be specified as an RGB value, using this formula</p>
-    <h4>rgb(red, green, blue)</h4>
-    <p>Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.</p>
+    <h4>hsl(hue, saturation, lightness)</h4>
+    <p>Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue. Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color. Lightness is also a percentage, 0% is black, 50% is neither light or dark, 100% is white</p>
     <div class="codeRunDiv">
         <div class="firstRowOfColor">
-          <div id="red" class="colorBlock">rgb(255, 0, 0)</div>
-          <div id="green" class="colorBlock">rgb(60, 179, 113)</div>
-          <div id="yellow" class="colorBlock">rgb(255, 165, 0)</div>
+          <div id="hsl1" class="colorBlock">hsl(0, 100%, 50%)</div>
+          <div id="hsl2" class="colorBlock">hsl(240, 100%, 50%)</div>
+          <div id="hsl3" class="colorBlock">hsl(147, 50%, 47%)</div>
         </div>
         <div class="secondRowOfColor">
-          <div id="blue" class="colorBlock">rgb(0, 0, 255)</div>
-          <div id="pink" class="colorBlock">rgb(238, 130, 238)</div>
-          <div id="extra" class="colorBlock">rgb(106, 90, 205)</div>
+          <div id="hsl4" class="colorBlock">hsl(300, 76%, 72%)</div>
+          <div id="hsl5" class="colorBlock">hsl(39, 100%, 50%)</div>
+          <div id="hsl6" class="colorBlock">hsl(248, 53%, 58%)</div>
         </div>
     </div>
 
-    <h3>RGBA Value</h3>
-    <h4>rgba(red, green, blue, alpha)</h4>
+    <h3>HSLA Value</h3>
+    <h4>hsla(hue, saturation, lightness, alpha)</h4>
     <div class="codeRunDiv">
         <div class="firstRowOfColor">
-          <div id="rbga1" class="colorBlock">rgba(255, 99, 71, 0)</div>
-          <div id="rbga2" class="colorBlock">rgba(255, 99, 71, 0.2)</div>
-          <div id="rbga3" class="colorBlock">rgba(255, 99, 71, 0.4)</div>
+          <div id="hsla1" class="colorBlock">hsla(9, 100%, 64%, 0)</div>
+          <div id="hsla2" class="colorBlock">hsla(9, 100%, 64%, 0.2)</div>
+          <div id="hsla3" class="colorBlock">hsla(9, 100%, 64%, 0.4)</div>
         </div>
         <div class="secondRowOfColor">
-          <div id="rbga4" class="colorBlock">rgba(255, 99, 71, 0.6)</div>
-          <div id="rbga5" class="colorBlock">rgba(255, 99, 71, 0.8)</div>
-          <div id="rbga6" class="colorBlock">rgba(255, 99, 71, 1)</div>
+          <div id="hsla4" class="colorBlock">hsla(9, 100%, 64%, 0.6)</div>
+          <div id="hsla5" class="colorBlock">hsla(9, 100%, 64%, 0.8)</div>
+          <div id="hsla6" class="colorBlock">hsla(9, 100%, 64%, 1)</div>
         </div>
     </div>
 </body>
