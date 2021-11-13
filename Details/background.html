@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .area {
+            height: 60px;
+            width: 150px;
+        }
+        .backgroundColorDiv {
+            background-color: blue;
+        }
+
+        .backgroundColorTransparencyDiv1 {
+            background-color: blue;
+            opacity: 0.7;
+            /* background-image: url(../photos/weav.jpg); */
+            height: 300px;
+            width: 300px;
+            text-align: center;
+            line-height: 300px;
+        }
+        .backgroundColorTransparencyDiv2 {
+            background-color: blue;
+            opacity: 0.5;
+            /* background-image: url(../photos/weav.jpg); */
+            height: 300px;
+            width: 300px;
+            text-align: center;
+            line-height: 300px;
+        }
+        .backgroundColorTransparencyDiv3 {
+            background-color: blue;
+            opacity: 0.3;
+            /* background-image: url(../photos/weav.jpg); */
+            height: 300px;
+            width: 30%;
+            text-align: center;
+            line-height: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Background Color</h3>
+    <div class="codeDiv">
+        <code>
+            <span class="codeColorDarkRed">background-color</span><span class="codeColorGreen">: blue;</span>
+        </code> 
+    </div>
+    <div class="codeRunDiv">
+        <div class="backgroundColorDiv area">
+
+        </div> 
+    </div>
+
+    <h3>Opacity / Transparency</h3>
+    <p>It can take a value from 0.0 - 1.0. The lower value</p>
+    <div class="codeDiv">
+        <code>
+            <span class="codeColorDarkRed">background-color</span><span class="codeColorGreen">: blue;</span><br>
+            <span class="codeColorDarkRed">opacity</span><span class="codeColorGreen">: 0.3;</span>
+        </code> 
+    </div>
+    <div class="codeRunDiv" style="display: flex;">
+        <div class="backgroundColorTransparencyDiv1 area">opacity: 0.7;</div> 
+        <div class="backgroundColorTransparencyDiv2 area">opacity: 0.5;</div> 
+        <div class="backgroundColorTransparencyDiv3 area">opacity: 0.3;</div> 
+    </div>
+</body>
+</html>
