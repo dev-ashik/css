@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Repeat</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .horizontallyRepeat {
+            background-image: url("../photos/background\ image\ horizontally.jpg");
+            height: 500px;
+        }
+
+        .horizontallyRepeatX {
+            background-image: url("../photos/background\ image\ horizontally.jpg");
+            height: 300px;
+            background-repeat: repeat-x;
+        }
+
+        .backgroundRepeat {
+            background-image: url("../photos/background\ image\ vartically.jpg");
+            height: 300px;
+        }
+        .backgroundNoRepeat {
+            background-image: url("../photos/background\ image\ vartically.jpg");
+            background-repeat: no-repeat;
+            height: 300px;
+        }
+        .backgroundPosition {
+            background-image: url("../photos/background\ image\ vartically.jpg");
+            background-repeat: no-repeat;
+            height: 300px;
+            background-position: right top;
+        }
+    </style>
+</head>
+<body>
+    <h3>Background Repeat</h3>
+    <p>If the image above is repeated only horizontally (background-repeat: repeat-x;), the background will look better.</p>
+    <div class="codeDiv">
+        <div class="codeRunDiv horizontallyRepeat"></div>
+        <div class="codeRunDiv horizontallyRepeatX"></div>
+    </div>
+
+    <div class="codeRunDiv" style="font-size: 15px;">
+        <div class="codeDiv">
+            <code>
+                <span class="codeColorGreen">.backgroundImageRepeat </span>{ <br>
+                    &nbsp; &nbsp;<span class="codeColorDarkRed">background-image </span><span class="codeColorBlue">: url("../photos/background\ image\ horizontally.jpg");</span><br> 
+                }
+            </code>
+        </div>
+        <div class="codeDiv">
+            <code>
+                <span class="codeColorGreen">.backgroundImageRepeat </span>{ <br>
+                    &nbsp; &nbsp;<span class="codeColorDarkRed">background-image </span><span class="codeColorBlue">: url("../photos/background\ image\ horizontally.jpg");</span><br>
+                    &nbsp; &nbsp;<span class="codeColorDarkRed">background-repeat </span><span class="codeColorBlue">: repeat-x;</span><br>
+                }
+            </code>
+        </div>
+    </div>
+
+    <h3>background-repeat: no-repeat</h3>
+     <div class="codeDiv">
+        <div class="codeRunDiv backgroundRepeat"></div>
+        <div class="codeRunDiv backgroundNoRepeat"></div>
+    </div>
+
+    <div class="codeDiv">
+        <code>
+            <span class="codeColorGreen">.backgroundImageRepeat </span>{ <br>
+                &nbsp; &nbsp;<span class="codeColorDarkRed">background-image </span><span class="codeColorBlue">: url("../photos/background\ image\ horizontally.jpg");</span><br> 
+                &nbsp; &nbsp;<span class="codeColorDarkRed">background-repeat </span><span class="codeColorBlue">: no-repeat;</span><br> 
+                &nbsp; &nbsp;<span class="codeColorComment">/*  Showing the background image only once */</span><br>
+            }
+        </code>
+    </div> 
+
+    <h3>background position</h3>
+     <div class="codeDiv">
+        <div class="codeRunDiv backgroundPosition"></div>
+    </div>
+
+    <div class="codeDiv">
+        <code>
+            <span class="codeColorGreen">.backgroundImageRepeat </span>{ <br>
+                &nbsp; &nbsp;<span class="codeColorDarkRed">background-position </span><span class="codeColorBlue">: right top;</span><br>  
+            }
+        </code>
+    </div> 
+</body>
+</html>

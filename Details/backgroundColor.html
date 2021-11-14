@@ -43,6 +43,29 @@
             line-height: 300px;
         }
 
+        .backgroundColorTransparencyDivrgba1 {
+            background-color: rgba(0, 0, 255, 0.7);
+            height: 300px;
+            width: 30%;
+            text-align: center;
+            line-height: 300px;
+        }
+        .backgroundColorTransparencyDivrgba2 {
+            background-color: rgba(0, 0, 255, 0.5);
+            height: 300px;
+            width: 30%;
+            text-align: center;
+            line-height: 300px;
+        }
+        .backgroundColorTransparencyDivrgba3 {
+            background-color: rgba(0, 0, 255, 0.3);
+            height: 300px;
+            width: 30%;
+            text-align: center;
+            line-height: 300px;
+        }
+
+
     </style>
 </head>
 <body>
@@ -71,5 +94,21 @@
         <div class="backgroundColorTransparencyDiv2 area">opacity: 0.5;</div> 
         <div class="backgroundColorTransparencyDiv3 area">opacity: 0.3;</div> 
     </div>
+    <p>When using the opacity property to add transparency to the background of an element, all of its child elements inherit the same transparency. This can make the text inside a fully transparent element hard to read.</p>
+
+    <h3>Transparency using RGBA</h3>
+    <p>If you do not want to apply opacity to child elements, like in our example above, use RGBA color values</p>
+    <div class="codeDiv">
+        <code>
+            <span class="codeColorDarkRed">background-color</span><span class="codeColorGreen">: rgba(0, 0, 255, 0.7);</span><br>
+        </code> 
+    </div>
+    <div class="codeRunDiv" style="display: flex;">
+        <div class="backgroundColorTransparencyDivrgba1 area">rgba(0, 0, 255, 0.7);</div> 
+        <div class="backgroundColorTransparencyDivrgba2 area">rgba(0, 0, 255, 0.5);</div> 
+        <div class="backgroundColorTransparencyDivrgba3 area">rgba(0, 0, 255, 0.3);</div> 
+    </div>
+
+
 </body>
 </html>
