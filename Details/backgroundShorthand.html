@@ -19,6 +19,12 @@
 <body>
     <div class="codeDiv">
         <div class="codeRunDiv backgroundShorthand">
+            
+        </div>
+    </div>
+
+    <div class="codeRunDiv">
+        <div class="codeDiv">
             <code>
                 <span class="codeColorGreen">.backgroundShorthand </span>{ <br>
                     &nbsp; &nbsp;<span class="codeColorDarkRed">background-color </span><span class="codeColorBlue">: #ffffff;</span><br> 
@@ -28,12 +34,23 @@
                 }
             </code>
         </div>
-    </div>
-
-    <div class="codeRunDiv">
         <div class="codeDiv">
-        
+            <code>
+                <h3 class="codeColorComment">/* Shorthand */</h3>
+                <span class="codeColorGreen">.backgroundShorthand </span>{ <br>
+                    &nbsp; &nbsp;<span class="codeColorDarkRed">background-color </span><span class="codeColorBlue">: #ffffff url("img_tree.png") no-repeat right top;</span><br> 
+                }
+            </code>
         </div>
     </div>
+    <h4>When using the shorthand property the order of the property values is:</h4>
+    <ul>
+        <li>background-color</li>
+        <li>background-image</li>
+        <li>background-repeat</li>
+        <li>background-attachment</li>
+        <li>background-position</li>
+    </ul>
+    <p>It does not matter if one of the property values is missing, as long as the other ones are in this order. Note that we do not use the background-attachment property in the examples above, as it does not have a value.</p>
 </body>
 </html>
