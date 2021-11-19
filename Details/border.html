@@ -7,6 +7,11 @@
     <title>Border</title>
     <link rel="stylesheet" href="../styles.css">
     <style>
+        .commonCss {
+            padding: 5px;
+            margin: 10px;
+            border: 3px solid red;
+        }
         .borderWithText {
             border: 1px solid red;
             padding: 5px;
@@ -21,6 +26,44 @@
             border-bottom: 1px solid greenyellow;
             padding: 5px;
         }
+
+        .noneBorder {
+            border-style: none;
+        }
+        .dottedBorder {
+            border-style: dotted;
+        }
+        .dashedBorder {
+            border-style: dashed;
+        }
+        .solidBorder {
+            border-style: solid;
+        }
+        .doubleBorder {
+            border-style: double;
+        }
+        .grooveBorder {
+            border: 5px solid red;
+            border-style: groove;
+        }
+        .ridgeBorder {
+            border: 5px solid red;
+            border-style: ridge;
+        }
+        .insetBorder {
+            border: 5px solid red;
+            border-style: inset;
+        }
+        .outsetBorder {
+            border: 5px solid red;
+            border-style: outset;
+        }
+        .hiddenBorder {
+            border-style: hidden;
+        }
+        .mixBorder {
+            border-style:  dotted dashed solid double;
+        }
     </style>
 </head>
 <body>
@@ -29,8 +72,35 @@
         <p class="borderWithText">Text with border</p>
         <p class="borderTop">Border Top</p>
         <p class="borderBottom">Border Bottom</p>
-        <p class="borderBottom">Border Bottom</p>
-        <p class="borderBottom">Border Bottom</p>
+    </div>
+
+    <div class="codeRunDiv">
+        <span class="codeColorGreen">.border </span>{ <br>
+            &nbsp; &nbsp;<span class="codeColorDarkRed">border </span><span class="codeColorBlue">: 1px solid red;</span><br> 
+        }<br>
+        <span class="codeColorGreen">.borderTop </span>{ <br>
+            &nbsp; &nbsp;<span class="codeColorDarkRed">border-top </span><span class="codeColorBlue">: 1px solid lightblue;</span><br> 
+        }<br>
+        <span class="codeColorGreen">.borderBottom </span>{ <br>
+            &nbsp; &nbsp;<span class="codeColorDarkRed">border-bottom </span><span class="codeColorBlue">: 1px solid greenyellow;</span><br> 
+        }<br>
+
+    </div>
+
+    <h3>order Style</h3>
+    <p>The border-style property specifies what kind of border to display.</p>
+    <div class="codeDiv">
+        <p class="noneBorder commonCss">none Border</p>
+        <p class="solidBorder commonCss">solid Border</p>
+        <p class="dottedBorder commonCss">dotted Border</p>
+        <p class="dashedBorder commonCss">dashed Border</p>
+        <p class="doubleBorder commonCss">double Border</p>
+        <p class="grooveBorder commonCss">groove Border</p>
+        <p class="ridgeBorder commonCss">ridge Border</p>
+        <p class="insetBorder commonCss">inset Border</p>
+        <p class="outsetBorder commonCss">outset Border</p>
+        <p class="hiddenBorder commonCss">hidden Border</p>
+        <p class="mixBorder commonCss">mix Border</p>
     </div>
 </body>
 </html>
