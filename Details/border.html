@@ -64,6 +64,68 @@
         .mixBorder {
             border-style:  dotted dashed solid double;
         }
+
+        .borderWidth {
+            border-style: solid red;
+        }
+
+        .borderWidth1 {
+            border-width: thin;
+        }
+        .borderWidth2 {
+            border-width: medium;
+        }
+        .borderWidth3 {
+            border-width: thick;
+        }
+        .borderWidth4 {
+            border-width: 2px;
+        }
+        .borderWidth5 {
+            border-width: 6px;
+        }
+        .borderWidth6 {
+            border-width: 2pt;
+        }
+        .borderWidth7 {
+            border-width: 6pt;
+        }
+        .borderWidth8 {
+            border-width: 0.2cm;
+        }
+        .borderWidth9 {
+            border-width: 0.6cm;
+        }
+        .borderWidth10 {
+            border-width: 0.2em;
+        }
+        .borderWidth11 {
+            border-width: 0.6em;
+        }
+        .borderWidth12 {
+            border-width: 2px 4px 6px 8px;
+        }
+        .borderWidth13 {
+            border-width: 6px 2px;
+        }
+
+        .borderColor {
+            border: 3px solid;
+            padding: 8px;
+        }
+
+        .redBorder {
+            border-color: red;
+        }
+        .greenBorder {
+            border-color: green;
+        }
+        .blueBorder {
+            border-color: blue;
+        }
+        .blueBorderMix {
+            border-color: red blue green yellow;
+        }
     </style>
 </head>
 <body>
@@ -117,10 +179,128 @@
                 &nbsp; &nbsp;<span class="codeColorDarkRed">border-style </span><span class="codeColorBlue">: hidden;</span><br>  
                 &nbsp; &nbsp;<span class="codeColorDarkRed">border-style </span><span class="codeColorBlue">: dotted dashed solid double;</span><br> 
             }<br>
-           
-
-
         </code>
+    </div>
+
+    <hr>
+    <h1>Border Width</h1>
+    <p>The border-width property specifies the width of the four borders. The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick.</p>
+
+    <div class="codeRunDiv">
+        <h4>pre-defined</h4>
+        <p class="borderWidth1 borderWidth commonCss">thin Border</p>
+        <p class="borderWidth2 borderWidth commonCss">medium Border</p>
+        <p class="borderWidth3 borderWidth commonCss">thick Border</p>
+
+        <h4>px</h4>
+        <p class="borderWidth4 borderWidth commonCss">2px</p>
+        <p class="borderWidth5 borderWidth commonCss">6px</p>
+
+        <h4>pt</h4>
+        <p class="borderWidth6 borderWidth commonCss">2pt</p>
+        <p class="borderWidth7 borderWidth commonCss">6pt</p>
+
+        <h4>cm</h4>
+        <p class="borderWidth8 borderWidth commonCss">0.2cm</p>
+        <p class="borderWidth9 borderWidth commonCss">0.6cm</p>
+        
+        <h4>em</h4>
+        <p class="borderWidth10 borderWidth commonCss">0.2em</p>
+        <p class="borderWidth11 borderWidth commonCss">0.6em</p>
+        
+        <h4>mix</h4>
+        <p class="borderWidth12 borderWidth commonCss">2px 4px 6px 8px</p>
+        <p class="borderWidth13 borderWidth commonCss">2px 6px</p>
+    </div>
+    <div class="codeDiv">
+        <code>
+            <span class="codeColorGreen">.thinBorder </span>{ <br>
+                &nbsp; &nbsp;<span class="codeColorDarkRed">border-width </span><span class="codeColorBlue">: thin;</span><br> 
+            }<br>
+            <span class="codeColorGreen">.mediumBorder </span>{ <br>
+                &nbsp; &nbsp;<span class="codeColorDarkRed">border-width </span><span class="codeColorBlue">: medium;</span><br> 
+            }<br>
+            <span class="codeColorGreen">.thickBorder </span>{ <br>
+                &nbsp; &nbsp;<span class="codeColorDarkRed">border-width </span><span class="codeColorBlue">: thick;</span><br> 
+            }<br>
+            
+            <br>
+            <hr>
+
+            <span class="codeColorGreen">.pxBorder </span>{ <br>
+                &nbsp; &nbsp;<span class="codeColorDarkRed">border-width </span><span class="codeColorBlue">: 2px;</span><br> 
+            }<br>
+            <span class="codeColorGreen">.pxBorder </span>{ <br>
+                &nbsp; &nbsp;<span class="codeColorDarkRed">border-width </span><span class="codeColorBlue">: 6px;</span><br> 
+            }<br>
+
+            <br>
+            <hr>
+
+            <span class="codeColorGreen">.ptBorder </span>{ <br>
+                &nbsp; &nbsp;<span class="codeColorDarkRed">border-width </span><span class="codeColorBlue">: 2px;</span><br> 
+            }<br>
+            <span class="codeColorGreen">.ptBorder </span>{ <br>
+                &nbsp; &nbsp;<span class="codeColorDarkRed">border-width </span><span class="codeColorBlue">: 6px;</span><br> 
+            }<br>
+
+            <br>
+            <hr>
+            
+            <span class="codeColorGreen">.cmBorder </span>{ <br>
+                &nbsp; &nbsp;<span class="codeColorDarkRed">border-width </span><span class="codeColorBlue">: 0.2cm;</span><br> 
+            }<br>
+            <span class="codeColorGreen">.cmBorder </span>{ <br>
+                &nbsp; &nbsp;<span class="codeColorDarkRed">border-width </span><span class="codeColorBlue">: 0.6cm;</span><br> 
+            }<br>
+
+            <br>
+            <hr>
+
+            <span class="codeColorGreen">.emBorder </span>{ <br>
+                &nbsp; &nbsp;<span class="codeColorDarkRed">border-width </span><span class="codeColorBlue">: 0.2em;</span><br> 
+            }<br>
+            <span class="codeColorGreen">.emBorder </span>{ <br>
+                &nbsp; &nbsp;<span class="codeColorDarkRed">border-width </span><span class="codeColorBlue">: 0.6em;</span><br> 
+            }<br>
+
+            <br>
+            <hr>
+
+            <span class="codeColorGreen">.mixBorder </span>{ <br>
+                &nbsp; &nbsp;<span class="codeColorDarkRed">border-width </span><span class="codeColorBlue">: 2px 4px 6px 8px;</span><br> 
+            }<br>
+            <span class="codeColorGreen">.mixBorder </span>{ <br>
+                &nbsp; &nbsp;<span class="codeColorDarkRed">border-width </span><span class="codeColorBlue">: 6px 2px;</span><br> 
+            }<br>
+
+            <br>
+        </code>
+    </div>
+
+    <h1>Border color</h1>
+    <p>The border-color property is used to set the color of the four borders.</p>
+    <div class="codeRunDiv">
+        <p class="redBorder borderColor">red border</p>
+        <p class="greenBorder borderColor">green border</p>
+        <p class="blueBorder borderColor">blue border</p>
+        <p class="blueBorderMix borderColor">blue border</p>
+    </div>
+    <div class="codeDiv">
+        <code>
+            <span class="codeColorGreen">.redBorder </span>{ <br>
+                &nbsp; &nbsp;<span class="codeColorDarkRed">border-color </span><span class="codeColorBlue">: red;</span><br> 
+            }<br>
+            <span class="codeColorGreen">.greenBorder </span>{ <br>
+                &nbsp; &nbsp;<span class="codeColorDarkRed">border-color </span><span class="codeColorBlue">: green;</span><br> 
+            }<br>
+            <span class="codeColorGreen">.blueBorder </span>{ <br>
+                &nbsp; &nbsp;<span class="codeColorDarkRed">border-color </span><span class="codeColorBlue">: blue;</span><br> 
+            }<br>
+            <span class="codeColorGreen">.blueBorderMix </span>{ <br>
+                &nbsp; &nbsp;<span class="codeColorDarkRed">border-color </span><span class="codeColorBlue">: red blue green yellow;</span><br> 
+            }<br>
+        </code>  
     </div>
 </body>
 </html>
