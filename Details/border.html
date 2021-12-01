@@ -194,6 +194,32 @@
         .roundBorder3 {
             border-radius: 20px;
         }
+        .shortHandTopBorder {
+            border-top: 2px solid red;
+        }
+
+        .borderTopSideColor {
+            padding: 2px;
+            border-style: solid;
+            border-top-color: red;
+        }
+        .borderBottomSideColor {
+            padding: 2px;
+            border-style: dashed;
+            border-bottom-color: red;
+        }
+        
+        .borderTopSideWidth {
+            border: 2px solid red;
+            border-top-width: 10px;
+            padding: 3px;
+        }
+
+        .borderBottomSideWidth {
+            border: 2px dashed green;
+            border-bottom-width: 10px;
+            padding: 3px;
+        }
     </style>
 </head>
 <body>
@@ -201,14 +227,21 @@
     <p>The border property is a shorthand property for the following individual border properties: 1.border-width 2.border-style (required) 3.border-color</p>
     <div class="codeRunDiv">
         <p class="shortHand shortHand1">short handn border</p>
+        <p class="shortHandTopBorder">short handn border-top</p>
     </div>
     <div class="codeDiv">
         <span class="codeColorGreen">.border </span>{ <br>
             &nbsp; &nbsp;<span class="codeColorDarkRed">border</span><span class="codeColorBlue">: 2px solid red;</span><br> 
+        }<br><br>
+        <span class="codeColorGreen">.borderTop </span>{ <br>
+            &nbsp; &nbsp;<span class="codeColorDarkRed">border-top</span><span class="codeColorBlue">: 2px solid red;</span><br> 
         }<br>
     </div>
-
+    <p>You can also specify all the individual border properties for just one side</p>
     <hr>
+
+
+
 
     <h3>color of an element's border.</h3>
     <div class="codeDiv">
@@ -229,7 +262,10 @@
         }<br>
 
     </div>
+    
+    <hr>
 
+    <!-- ********* Border Style ********* -->
     <h3>Border Style</h3>
     <p>The border-style property specifies what kind of border to display.</p>
     <div class="codeRunDiv">
@@ -241,9 +277,6 @@
         <p class="grooveBorder commonCss">groove Border</p>
         <p class="ridgeBorder commonCss">ridge Border</p>
         <p class="insetBorder commonCss">inset Border</p>
-        <p class="outsetBorder commonCss">outset Border</p>
-        <p class="hiddenBorder commonCss">hidden Border</p>
-        <p class="mixBorder commonCss">mix Border</p>
         <p class="outsetBorder commonCss">outset Border</p>
         <p class="hiddenBorder commonCss">hidden Border</p>
         <p class="mixBorder commonCss">mix Border</p>
@@ -294,6 +327,8 @@
     </div>
 
     <hr>
+
+    <!-- ********* Border Width ********* -->
     <h1>Border Width</h1>
     <p>The border-width property specifies the width of the four borders. The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick.</p>
 
@@ -389,6 +424,34 @@
         </code>
     </div>
 
+
+    <hr>
+
+    <!-- ********* Border Side Width ********* -->
+    <h1>Border Side Width</h1>
+    <p>The border-color property is used to set the color of the four borders.</p>
+    <div class="codeRunDiv">
+        <p class="borderTopSideWidth">border Top Side Width</p>
+        <p class="borderBottomSideWidth">border Bottom Side Width</p>
+    </div>
+    <div class="codeDiv">
+        <code>
+            <span class="codeColorGreen">.borderTopSideWidth </span>{ <br>
+                &nbsp; &nbsp;<span class="codeColorDarkRed">border</span><span class="codeColorBlue">: 2px solid red;</span><br> 
+                &nbsp; &nbsp;<span class="codeColorDarkRed">border-top-width</span><span class="codeColorBlue">: 10px;</span><br> 
+            }<br><br>
+
+            <span class="codeColorGreen">.borderBottomSideWidth </span>{ <br>
+                &nbsp; &nbsp;<span class="codeColorDarkRed">border</span><span class="codeColorBlue">: 2px dashed red;</span><br> 
+                &nbsp; &nbsp;<span class="codeColorDarkRed">border-bottom-width</span><span class="codeColorBlue">: 10px;</span><br> 
+            }<br>
+            
+        </code>  
+    </div>
+
+    <hr>
+
+    <!-- ********* Border color ********* -->
     <h1>Border color</h1>
     <p>The border-color property is used to set the color of the four borders.</p>
     <div class="codeRunDiv">
@@ -414,6 +477,30 @@
         </code>  
     </div>
 
+    <hr>
+    <!-- ********* Border Side Color ********* -->
+    <h1>Border Side Color</h1>
+    <div class="codeRunDiv">
+        <p class="borderTopSideColor">border Top Side Color</p>
+        <p class="borderBottomSideColor">border Bottom Side Color</p>
+    </div>
+    <div class="codeDiv">
+        <code>
+            <span class="codeColorGreen">.borderTopSideColor </span>{ <br>
+                &nbsp; &nbsp;<span class="codeColorDarkRed">border-style</span><span class="codeColorBlue">: solid;</span><br> 
+                &nbsp; &nbsp;<span class="codeColorDarkRed">border-Top-color</span><span class="codeColorBlue">: red;</span><br> 
+            }<br><br>
+            <span class="codeColorGreen">.borderBottomSideColor </span>{ <br>
+                &nbsp; &nbsp;<span class="codeColorDarkRed">border-style</span><span class="codeColorBlue">: dashed;</span><br> 
+                &nbsp; &nbsp;<span class="codeColorDarkRed">border-bottom-color</span><span class="codeColorBlue">: red;</span><br> 
+            }<br>
+            
+        </code>  
+    </div>
+
+    <hr>
+
+    <!-- ********* Border Sides ********* -->
     <h1>Border Sides</h1>
     <div class="codeRunDiv">
         <p class="BorderSide BorderTopSide1">border top</p>
@@ -438,6 +525,9 @@
         </code>
     </div>
 
+    <hr>
+
+    <!-- ********* Border Sides style ********* -->
     <h1>Border Sides style</h1>
     <div class="codeRunDiv">
             <p class="BorderSide BorderSide1">top border dotted</p>
@@ -468,7 +558,10 @@
             }<br>
         </code> 
     </div>
+
     <hr>
+
+    <!-- ********* Round border ********* -->
     <h3>Round border</h3>
     <div class="codeRunDiv">
         <p class="roundBorder roundBorder1">border-radius: 0px;</p>
